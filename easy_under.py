@@ -2,6 +2,7 @@ import streamlit as st
 import openai
 import json
 import pandas as pd
+# Get the OpenAI API key from the environment variable
 user_api_key = st.sidebar.text_input("OpenAI API key", type="password")
 client = openai.OpenAI(api_key=user_api_key)
 prompt = """Act as an assistant to help users paraphrase their sentences for better understanding. 
